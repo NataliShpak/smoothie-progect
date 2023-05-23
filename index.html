@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smoothie</title>
+    <style>
+      body {
+        /* background-color: aquamarine; */
+        background: linear-gradient(#e66465, #9198e5);
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      h1 {
+        color: #7d51e8;
+      }
+
+      h2 {
+        border: 1px solid #7d51e8;
+        padding: 15px;
+        font-size: 22px;
+        border-radius: 4px;
+      }
+
+      span {
+        color: #fa9ce7;
+        font-weight: 900;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 12px;
+        margin: 20 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #7d51e8;
+        color: #fff;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+
+      .learn-more {
+        display: block;
+        margin-top: 20px;
+        color: #7d51e8;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+        background: linear-gradient(#e66465, #5865f0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love smoothie</h1>
+      <h2>
+        Especially <span> <em> berry </em> </span> <strong> smoothies </strong>
+      </h2>
+      <hr />
+      <img
+        src="https://cookingformysoul.com/wp-content/uploads/2022/05/triple-berry-smoothie-feat-min.jpg"
+        alt="Berry Smoothie"
+      />
+      <hr />
+      <p>
+        The smoothie is a fruit or vegetable-based diet drink ("smooth" means
+        light), and is a concentrate of vitamins with a thick consistency served
+        with ice cubes. The nutrition of a smoothie depends on its ingredients
+        and their proportions. Many smoothies include large or multiple servings
+        of fruits and vegetables, which are recommended in a healthy diet and
+        intended to be a meal replacement. A green smoothie typically consists
+        of 40–50% green vegetables (roughly half), usually raw green leafy
+        vegetables, such as spinach, kale, Swiss chard, collard greens, celery,
+        parsley, or broccoli, with the remaining ingredients being mostly or
+        entirely fruit.
+        <br />
+        Many different smoothies are part of Indian, Mediterranean, and Middle
+        Eastern cuisine. Fruit sharbat (a popular West and South Asian drink)
+      </p>
+      <a
+        href="https://www.bbcgoodfood.com/recipes/collection/vegan-smoothie-recipes"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on bbcgoodfood.com
+      </a>
+
+      <button class="buy-button">👉 Buy Berry Smoothie</button>
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/nataliia-shpak-1372b6125/"
+          target="_blank"
+        >
+          Nataliia Shpak
+        </a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let emoji = prompt("What is your favorite emoji?");
+
+        if (name != "Nataliia") {
+          alert(
+            "Thank you " +
+              name +
+              "! We'll be in touch by email, meanwhile have lot of Smoothie! " +
+              emoji
+          );
+        } else {
+          alert("Buongiorno!");
+        }
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
